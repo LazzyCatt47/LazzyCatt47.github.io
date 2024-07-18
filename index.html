@@ -2,25 +2,20 @@
 <html>
 <head>
     <title>Calculadora de Derivadas Algebraicas</title>
-    <style>
-        body {
-            background-color: lavender;
-            color: white;
-            text-align: center;
-            font-family: Arial, sans-serif;
-       
-        }
-    </style>
 </head>
 <body>
-    <h1>Calculadora de Derivadas Algebraicas</h1>
+<body style="background-color:lavender;">
+    <h1>Calculadora de Derivadas</h1>
+<p style="color:midnightblue;">
+
+
     
-    <input type="text" id="funcion" placeholder="Ingrese la funcion">
-    <button onclick="calcularDerivada()">Calcular Derivada</button>
+    <label for="funcion">Función:</label>
+    <input type="text" id="funcion"><br>
+    
+    <button onclick="calcularDerivada()">Calcular Derivada</button><br>
     
     <p id="resultado"></p>
-    
-    <img src="images/istockphoto-521203614-612x612.jpg">
     
     <script>
         function calcularDerivada() {
@@ -30,10 +25,11 @@
         }
         
         function derivada(funcion) {
-            // Aquí puedes implementar la lógica para calcular la derivada de la función algebraica
-            // Por ejemplo, usando bibliotecas como math.js o implementando tus propios cálculos
-            return "Función derivada";
+            return math.derivative(funcion, 'x').toString();
         }
     </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.6.0/math.js"></script>
+<img src="istockphoto-521203614-612x612.jpg">
 </body>
 </html>
