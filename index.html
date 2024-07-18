@@ -9,8 +9,6 @@
 <body style="background-color:lavender;">
     <h1>Calculadora de Derivadas</h1>
 <p style="color:midnightblue;">
-
-
     
     <label for="funcion">Función:</label>
     <input type="text" id="funcion"><br>
@@ -25,15 +23,12 @@
             var resultado = derivada(funcion);
             document.getElementById("resultado").innerHTML = "La derivada de la función es: " + resultado;
         }
-        
         function derivada(funcion) {
             return math.derivative(funcion, 'x').toString();
         }
     </script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.6.0/math.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.6.0/math.js"></script>  
 </center>
->
+
 </body>
 </html>
